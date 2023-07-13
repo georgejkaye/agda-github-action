@@ -36,6 +36,7 @@ fi
 if [ "$4" == "true" ]; then
     echo "Generating HTML from Agda code."
     agda --html --html-highlight=code $1
+    agda --html $1
 
     # Generate HTML from Markdown files.
     cd html
